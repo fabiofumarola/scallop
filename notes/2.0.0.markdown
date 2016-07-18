@@ -1,0 +1,12 @@
+
+### Breaking change
+This release introduces a breaking change - opt[File] no longer checks that supplied file exists
+(because it is common to provide output file as an argument).
+
+### Improvements
+* Added option to enable appending of default option values to option description ([#103](https://github.com/Rogach/scallop/issues/103)).
+* Suppress "trailing arguments" from output if all trailing args are hidden ([Jesse Kinkead](https://github.com/jkinkead), [#106](https://github.com/Rogach/scallop/issues/106)).
+* Do not run validation functions if no options are provided, instead fall back to default values ([#108](https://github.com/Rogach/scallop/issues/108)).
+* Improved error messages for common converter types ([Jesse Kinkead](https://github.com/jkinkead), [#111](https://github.com/Rogach/scallop/issues/111)).
+* Added ScallopOption.toOption, deprecated ScallopOption.get to avoid confusion with native Scala Option methods ([#112](https://github.com/Rogach/scallop/issues/112)).
+* Added java.nio.Path converter ([Jesse Kinkead](https://github.com/jkinkead), [#114](https://github.com/Rogach/scallop/issues/114)).
