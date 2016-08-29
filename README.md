@@ -38,7 +38,7 @@ Quick example
 =============
 
 ```scala
-import org.rogach.scallop._;
+import org.rogach.scallop._
 
 object Conf extends ScallopConf(List("-c","3","-E","fruit=apple","7.2")) {
   // all options that are applicable to builder (like description, default, etc)
